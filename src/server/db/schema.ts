@@ -8,7 +8,9 @@ import type { AdapterAccount } from "next-auth/adapters";
  *
  * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
  */
-export const createTable = sqliteTableCreator((name) => `anthony-dev_${name}`);
+export const createTable = sqliteTableCreator(
+	(name) => `anthonyamiluddin_${name}`,
+);
 
 export const posts = createTable(
 	"post",
